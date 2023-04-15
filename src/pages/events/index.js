@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export async function getStaticProps() {
   const { events_categories } = await import('../../data/data.json')
@@ -18,10 +19,10 @@ const Events = ({ data }) => {
       <div>
         {data.map((data) => {
           return (
-            <a key={data.id} href={`/events/${data.id}`}>
+            <Link key={data.id} href={`/events/${data.id}`}>
               <Image width={300} height={300} alt={data.title} src={data.image} />
               <h2>{data.title}</h2>
-            </a>
+            </Link>
 
           )
         })}
