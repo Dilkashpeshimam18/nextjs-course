@@ -23,7 +23,6 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const { allEvents } = await import('../../../data/data.json')
-  console.log('Single Event Context>>>', context)
   const id = context?.params.id
 
   const data = allEvents.filter((data) => {

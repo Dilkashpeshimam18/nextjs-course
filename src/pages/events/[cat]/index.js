@@ -41,7 +41,7 @@ const EventCat = ({ data }) => {
                 data.map((data) => {
                     return (
                         <div>
-                         <a key={data.id} href={`/events/${data.city}/${data.id}`} >
+                         <a key={data.id} href={`/events/${data.city.toLowerCase()}/${data.id}`} >
                          <Image width={300} height={300} alt={data.title} src={data.image} />
                          <h4>{data.title}</h4>
 
