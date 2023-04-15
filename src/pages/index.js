@@ -28,9 +28,9 @@ export default function Home({ data }) {
         </Head>
         <nav>
           <img />
-          <a href='/'>Home</a>
-          <a href='/events'>Events</a>
-          <a href='/about-us'>About Us</a>
+          <Link href='/'>Home</Link>
+          <Link href='/events'>Events</Link>
+          <Link href='/about-us'>About Us</Link>
 
 
         </nav>
