@@ -18,11 +18,8 @@ export async function getServerSideProps() {
 export default function Home({ data }) {
   return (
     <>
+      <HomePage data={data} />
 
-     <Header />
-     <HomePage data={data} />
-     <Footer />
-     
     </>
   )
 }

@@ -1,5 +1,11 @@
+import MainLayout from '@/components/MainLayout/MainLayout'
 import '@/styles/globals.css'
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <MainLayout>
+      <Component {...pageProps} />
+    </MainLayout>
+
+  )
 }
